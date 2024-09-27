@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cpadvcqqvfyca"]
+
+[node name="tree" type="Node2D"]
+position = Vector2(201, 475)
+scale = Vector2(0.55, 0.55)
+
+[node name="leaves" type="ColorRect" parent="."]
+modulate = Color(0.440328, 0.320823, 0.265089, 1)
+offset_left = -454.84
+offset_top = -2650.96
+offset_right = 2845.16
+offset_bottom = -1457.96
+color = Color(0.986082, 0.685574, 0.792297, 1)
+
+[node name="trunk" type="ColorRect" parent="."]
+modulate = Color(0.30762, 0.217974, 0.176115, 1)
+offset_left = 960.0
+offset_top = -1925.0
+offset_right = 1397.0
+offset_bottom = 1145.0

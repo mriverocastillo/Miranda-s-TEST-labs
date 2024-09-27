@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://vevjkx082ikm"]
+
+[ext_resource type="Texture2D" uid="uid://csckv2mmfg2qa" path="res://cat_PNG50447.png" id="1_0ghyg"]
+[ext_resource type="Texture2D" uid="uid://uved4hwhflsd" path="res://icon.svg" id="2_fh7qi"]
+[ext_resource type="PackedScene" uid="uid://cpadvcqqvfyca" path="res://tree.tscn" id="3_s8ff1"]
+
+[node name="gato" type="Sprite2D"]
+position = Vector2(176, 447)
+scale = Vector2(0.15335, 0.166783)
+texture = ExtResource("1_0ghyg")
+
+[node name="robot" type="Sprite2D" parent="."]
+position = Vector2(1682.42, 665.534)
+scale = Vector2(7.83212, 7.75994)
+texture = ExtResource("2_fh7qi")
+
+[node name="robot2" type="Sprite2D" parent="robot"]
+position = Vector2(132.585, -1.04642)
+scale = Vector2(1, 1)
+texture = ExtResource("2_fh7qi")
+
+[node name="tree" parent="." instance=ExtResource("3_s8ff1")]
+z_index = -1
+position = Vector2(1493.31, 647.546)
+
+[node name="tree4" parent="." instance=ExtResource("3_s8ff1")]
+position = Vector2(4492.98, -857.4)
+
+[node name="tree5" parent="." instance=ExtResource("3_s8ff1")]
+position = Vector2(2517.11, -1205.16)
+
+[node name="tree2" type="Node2D" parent="."]
+position = Vector2(5027.7, 593.584)
+scale = Vector2(0.5, 0.5)
+
+[node name="leaves" type="ColorRect" parent="tree2"]
+modulate = Color(0.440328, 0.320823, 0.265089, 1)
+offset_left = -454.84
+offset_top = -2650.96
+offset_right = 2845.16
+offset_bottom = -1457.96
+color = Color(8.66354e-06, 0.981718, 0.522622, 1)
+
+[node name="trunk" type="ColorRect" parent="tree2"]
+modulate = Color(0.440328, 0.320823, 0.265089, 1)
+offset_left = 960.0
+offset_top = -1925.0
+offset_right = 1397.0
+offset_bottom = 1145.0
+
+[node name="tree3" type="Node2D" parent="."]
+position = Vector2(2712.74, 419.706)
+scale = Vector2(0.7, 0.7)
+
+[node name="leaves" type="ColorRect" parent="tree3"]
+modulate = Color(0.440328, 0.320823, 0.265089, 1)
+offset_left = -454.84
+offset_top = -2650.96
+offset_right = 2845.16
+offset_bottom = -1457.96
+color = Color(8.66354e-06, 0.981718, 0.522622, 1)
+
+[node name="trunk" type="ColorRect" parent="tree3"]
+modulate = Color(0.440328, 0.320823, 0.265089, 1)
+offset_left = 960.0
+offset_top = -1925.0
+offset_right = 1397.0
+offset_bottom = 1145.0
